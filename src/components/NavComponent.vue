@@ -1,9 +1,17 @@
 <template>
-<at-menu mode="horizontal" router>
-	<at-menu-item to="/"><i class="icon icon-home"></i>Trang chủ</at-menu-item>
-	<at-menu-item to="/member"><i class="icon icon-layers"></i>Nhân viên</at-menu-item>
-</at-menu>
+<el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" :router="true">
+  <el-menu-item :route="{name: 'HomeComponent'}" index="1">Trang chủ</el-menu-item>
+  <el-menu-item :route="{name: 'MemberComponent'}" index="2">Nhân viên</el-menu-item>
+  <el-menu-item :route="{name: 'ChamCongComponent'}" index="3">Chấm công</el-menu-item>
+</el-menu>
 </template>
 <script>
-	
+export default {
+	data() {
+      return {
+        activeIndex: '1',
+        activeIndex2: '1'
+      };
+    }
+}
 </script>

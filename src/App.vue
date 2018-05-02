@@ -1,8 +1,12 @@
 <template>
-  <div id="app" class="at-container">
+<el-container>
+  <el-header>
     <NavComponent></NavComponent>
+  </el-header>
+  <el-main>
     <router-view/>
-  </div>
+  </el-main>
+</el-container>
 </template>
 
 <script>

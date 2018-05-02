@@ -5,15 +5,16 @@ import App from './App'
 import './firebase'
 import VueFire from 'vuefire'
 import router from './router'
-import AtComponents from 'at-ui'
-import 'at-ui-style'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css';
+import locale from 'element-ui/lib/locale/lang/en'
 import 'vue-event-calendar/dist/style.css'
 import vueEventCalendar from 'vue-event-calendar'
 
 
 Vue.config.productionTip = false
 Vue.use(VueFire)
-Vue.use(AtComponents)
+Vue.use(ElementUI, { locale })
 Vue.use(vueEventCalendar, {locale: 'vi'})
 /* eslint-disable no-new */
 new Vue({

@@ -9,13 +9,12 @@
   data () {
     return {
       demoEvents: [{
-        date: '2016/11/12', // Required
+        date: '2018/5/12', // Required
         title: 'Foo' // Required
       }, {
-        date: '2016/12/15',
+        date: '2018/5/15',
         title: 'Bar',
         desc: 'description',
-        customClass: 'disabled highlight' // Custom classes to an calendar cell
       }]
     }
   }

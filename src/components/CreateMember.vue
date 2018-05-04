@@ -17,11 +17,11 @@ import {
   db
 } from '../firebase'
 export default {
-  data() {
+  data () {
     return {
       form: {
         name: '',
-        money: 300000,
+        money: 300000
       }
     }
   },
@@ -29,20 +29,20 @@ export default {
     members: db.ref('members')
   },
   methods: {
-    createMember() {
+    createMember () {
       if (this.form.name != '') {
         let member = {
           name: this.form.name,
           money: this.form.money,
           date: this.currentDate()
         }
-        this.$firebaseRefs.members.push(member);
-        this.form.name = '';
+        this.$firebaseRefs.members.push(member)
+        this.form.name = ''
       }
     },
-    currentDate() {
-        var date = new Date();
-        return date.getFullYear() + '/' + date.getDate() + '/' + (date.getMonth() + 1);
+    currentDate () {
+      var date = new Date()
+      return date.getFullYear() + '/' + date.getDate() + '/' + (date.getMonth() + 1)
     }
   }
 }

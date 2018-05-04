@@ -5,7 +5,7 @@
 	</div>
 </template>
 <script>
-	export default {
+export default {
   data () {
     return {
       demoEvents: [{
@@ -14,7 +14,7 @@
       }, {
         date: '2018/5/15',
         title: 'Bar',
-        desc: 'description',
+        desc: 'description'
       }]
     }
   }

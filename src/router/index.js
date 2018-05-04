@@ -19,9 +19,9 @@ export default new Router({
     	component: MemberComponent
     },
     {
-        path: '/chamcong',
-        name: 'ChamCongComponent',
-        component: ChamCongComponent
+      path: '/chamcong',
+      name: 'ChamCongComponent',
+      component: ChamCongComponent
     }
   ]
 })

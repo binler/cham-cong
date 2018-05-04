@@ -42,8 +42,8 @@ export default {
     CreateMember
   },
   methods: {
-    removeMember(member) {
-      this.$firebaseRefs.members.child(member['.key']).remove();
+    removeMember (member) {
+      this.$firebaseRefs.members.child(member['.key']).remove()
     }
   }
 }
